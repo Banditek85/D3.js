@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3</title>
+    <style>
+        svg {
+            border: 1px solid lightgray;
+            box-shadow: 1px 1px 5px lightgray;
+        }
+
+        #events div {
+            border: 1 px solid darkcyan;
+            height: 200px;
+            width: 200px;
+            background-color: darkcyan;
+        }
+
+        #flex_container {
+            display: flex;
+        }
+
+        #flex_container > div {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="flex_container">
+        <div>
+            <h3>List items:</h3>
+            <ul id="list">
+                <li></li>
+                <li></li>
+            </ul>
+    
+            <h3>SVG</h3>
+            <p>Appending svg rectangles with D3:</p>
+            <svg width="200" height="200">
+            </svg>
+    
+            <div id="events">
+                <h4>Events:</h4>
+                <div></div>
+            </div>
+        </div>
+
+        <div>
+            <div id="scales">
+                <h3>Scales and bar chart</h3>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"
+        integrity="sha512-0x7/VCkKLLt4wnkFqI8Cgv6no+AaS1TDgmHLOoU3hy/WVtYta2J6gnOIHhYYDJlDxPqEqAYLPS4gzVex4mGJLw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
