@@ -5,7 +5,7 @@ const svg = d3.select("body")
     .append("g")
     .attr("transform","translate(50,50)");
 
-// Unlike previouse examples, data not in hieararchical format
+// Unlike previouse examples, data not in hierarchical format
 const data = [
     {child: "John",  parent: ""},
     {child: "Aaron", parent: "Kevin"},
@@ -19,7 +19,7 @@ const data = [
 ];
 
 /* d3.stratify function returns a function, that we can apply to
-flat (not hierarchical) lists of data and get hiearchical d3 model to 
+flat (not hierarchical) lists of data and get hierarchical d3 model to 
 work with. We specify id and parentId property functions which define
 how to construct the hiearchy */
 
