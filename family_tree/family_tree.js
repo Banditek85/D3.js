@@ -21,17 +21,17 @@ const data = [
 /* d3.stratify function returns a function, that we can apply to
 flat (not hierarchical) lists of data and get hierarchical d3 model to 
 work with. We specify id and parentId property functions which define
-how to construct the hiearchy */
+how to construct the hierarchy */
 
 const stratify = d3.stratify()
     .id(d => d.child)
     .parentId(d => d.parent);
 
 // Pass flat data to our stratify function
-const hiearchy = stratify(data);
+const hierarchy = stratify(data);
 
-// Declare tree variable by calling d3.tree and pass hiearchy model as argument
-const tree = d3.tree().size([640,300])(hiearchy);
+// Declare tree variable by calling d3.tree and pass hierarchy model as argument
+const tree = d3.tree().size([640,300])(hierarchy);
 console.log(tree.descendants());
 console.log(tree.links());
 
