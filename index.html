@@ -26,10 +26,26 @@
         #flex_container > div {
             margin: 30px;
         }
+
+        #navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        #navbar ul li {
+            margin: 20px;
+        }
     </style>
 </head>
 
 <body>
+    <div id="navbar">
+        <ul>
+            <li><a href="./tree_basic/tree_basic.html">Tree basic</a></li>
+            <li><a href="./tree/tree.html">Tree map</a></li>
+        </ul>
+    </div>
 
     <div id="flex_container">
         <div>
@@ -41,7 +57,7 @@
     
             <h3>SVG</h3>
             <p>Appending svg rectangles with D3:</p>
-            <svg width="200" height="200">
+            <svg width="200" height="300">
             </svg>
     
             <div id="events">
