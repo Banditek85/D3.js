@@ -23,6 +23,8 @@ window.onload = function () {
     // Creating a tree model
     let tree = treeLayout(root);
 
+    console.log(tree.descendants());
+
     // Append children svg circles
     d3.select("svg g#circles")
         .selectAll("circles")

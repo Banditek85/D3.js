@@ -11,7 +11,7 @@
             fill: white;
             stroke: silver;
             stroke-width: 2px;
-            width: 80px;
+            width: 120px;
             height: 40px;
         }
 
@@ -23,6 +23,26 @@
             fill: none;
             stroke: rgb(27, 168, 161);
         }
+
+        #details {
+            position: absolute;
+            left: 320px;
+            top: 120px;
+            width:100px;
+            height:30px;
+            background: gray;
+            color: white;
+            visibility: hidden;
+            border-radius: 15px;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        #logo_id {
+            width: 40px;
+            height: 40px;
+        }
     </style>
 </head>
 
@@ -30,6 +50,8 @@
 
 <body>
     <p><a href="../index.html">Home</a></p>
+
+    <div id="details"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.0.0/d3.min.js"
         integrity="sha512-55FY9DHtfMBE2epZhXrWn78so/ZT5/GCLim66+L83U5LghiYwVBAEris4/13Iab9S8C9ShJp3LQL/2raiaO+0w=="
