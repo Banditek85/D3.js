@@ -1,19 +1,13 @@
 let selection = d3.select("#events")
     .selectAll("p")
-    .data([{}, {}, {}])
+    .data([{name: "Ryu"}, {name: "Ken"}, {name: "Chun Li"}])
     .enter()
     .append("p")
-    .html("hello");
-
-
+    .html(d => d.name);
 
 selection.on("click", click);
 
-
-
-
-function click(p1, p2, p3) {
-    console.log(p1);
-    console.log(p2);
-    console.log(p3);
+function click(p_event, p_d ) {
+    console.log(p_event);
+    console.log(p_d.name);
 }
